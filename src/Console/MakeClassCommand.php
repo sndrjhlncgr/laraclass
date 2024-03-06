@@ -1,6 +1,6 @@
 <?php
 
-namespace Laracrea\LaravelClassGenerator\Console;
+namespace Laracrate\Generator\Console;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Laracrea\LaravelClassGenerator;
+namespace Laracrate\Generator;
 
 use Illuminate\Support\ServiceProvider;
-use Laracrea\LaravelClassGenerator\Console\MakeClassCommand;
+use Laracrate\Generator\Console\MakeClassCommand;
 
 class MakeClassServiceProvider extends ServiceProvider
 {
