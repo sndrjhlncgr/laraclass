@@ -35,7 +35,23 @@ class MakeClassCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-       
+        if ($this->option('constructor')) {
+            return __DIR__.'/stubs/class.constructor.stub';
+        }
+
+        if ($this->option('interface')) {
+            return __DIR__.'/stubs/interface.stub';
+        }
+
+        if ($this->option('abstract')) {
+            return __DIR__.'/stubs/abstract.class.stub';
+        }
+
+        if ($this->option('enum')) {
+            return __DIR__.'/stubs/enum.stub';
+        }
+
+        return __DIR__.'/stubs/class.stub';
     }
 
     /**
@@ -56,6 +72,12 @@ class MakeClassCommand extends GeneratorCommand
      */
     protected function getOptions()
     {
-        return [];
+        return [
+            ['force', 'f', InputOption::VALUE_NONE, 'Create the class even if the class already exists'],
+            ['constructor', 'c', InputOption::VALUE_NONE, 'Create a new class with constructor'],
+            ['interface', 'i', InputOption::VALUE_NONE, 'Create a new interface class'],
+            ['abstract', 'a', InputOption::VALUE_NONE, 'Create a new abstract class'],
+            ['enum', 'e', InputOption::VALUE_NONE, 'Create a new enum'],
+        ];
     }
 }
