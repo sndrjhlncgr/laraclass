@@ -22,7 +22,7 @@ composer require laracrate/generator
 
 
 ## Usage
-Use make:class command from Artisan.
+Use `php artisan make:class` command to make a class. add `-f` if you want to force create the class.
 
 To create a new class,
 
@@ -32,8 +32,6 @@ php artisan make:class YourClass
 php artisan make:class YourClass -c            
 php artisan make:class YourClass --constructor 
 ```
-
-
 
 To create a new abstract class
 
@@ -58,25 +56,3 @@ php artisan make:class YourClass --e
 // OR
 php artisan make:class YourClass --enum
 ```
-
-
-  ['force', 'f', InputOption::VALUE_NONE, 'Create the class even if the class already exists'],
-            ['constructor', 'c', InputOption::VALUE_NONE, 'Create a new class with constructor'],
-            ['interface', 'i', InputOption::VALUE_NONE, 'Create a new interface class'],
-            ['abstract', 'a', InputOption::VALUE_NONE, 'Create a new abstract class'],
-            ['enum', 'e', InputOption::VALUE_NONE, 'Create a new enum'],
-
-
-
-
-
-
-
-Usage
-To create a new class, call the make:class command from Artisan. Class will be created under the app folder.
-
-php artisan make:class ClassName
-You can add the -c or --constructor option to generate new class with constructor.
-
-php artisan make:class ClassName -c
-php artisan make:class ClassName --constructor
