@@ -1,17 +1,24 @@
 {
     "name": "laracrate/generator",
     "description": "Artisan command for generating a new custom interface, abstract, normal class in Laravel.",
-    "autoload": {
-        "psr-4": {
-            "Laracrate\\Generator\\": "src/"
-        }
-    },
+    "license": "MIT",
     "authors": [
         {
             "name": "Sandro Cagara",
             "email": "sandrocagaragithub@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Laracrate\\Generator\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laracrate\\Generator\\MakeClassServiceProvider"
+            ]
+        }
+    }
 }
