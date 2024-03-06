@@ -1,7 +1,7 @@
 <br>
 
 <div align="center">
-<h1 >Laravel Class Generator</h1>
+<h1 align="center">Laravel Class Generator</h1>
 <p align="center">Artisan command for generating a new custom interface, abstract, normal class in Laravel.</p>
 </div>
 
