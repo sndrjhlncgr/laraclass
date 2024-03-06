@@ -1,0 +1,18 @@
+<?php
+
+namespace MyNamespace;
+
+enum MyClass: string
+{
+     case KEY = '_____________';
+     
+     /**
+      * My function
+      *
+      * @return void
+      */
+     public function getFunction()
+     {
+           // code here
+     }
+}

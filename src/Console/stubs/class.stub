@@ -1,0 +1,8 @@
+<?php
+
+namespace MyNamespace;
+
+class MyClass
+{
+    // code here
+}
