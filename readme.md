@@ -17,7 +17,7 @@
 
 Install the package via composer:
 ```
-composer require laracrate/generator
+composer require --dev laracrate/generator
 ```
 
 
